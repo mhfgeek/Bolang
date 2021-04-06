@@ -1,0 +1,1437 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.btn.btn-primary {
+    background-color: #229FD9;
+    border-radius: 20px;
+    border : none;
+}
+
+// Navigasi
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 90px;
+    z-index: 999;
+    background-color: #fff;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    .navbar-nav {
+        .nav-item {
+            font-family: 'Montserrat Alternates';
+            font-size: 18px;
+            font-weight: 500;
+            .nav-link {
+                &.active {
+                    color: #229FD9;
+                }
+            }
+        }
+    }
+
+    form {
+        .btn-login {
+            -webkit-box-shadow: 8px 11px 35px 0px rgba(0,0,0,0.21);
+            -moz-box-shadow: 8px 11px 35px 0px rgba(0,0,0,0.21);
+            box-shadow: 8px 11px 35px 0px rgba(0,0,0,0.21);
+        }
+    }
+}
+
+.modal {
+    .modal-content {
+        .modal-body {
+            form {
+                width: 30%;
+                border-radius: 20px;
+
+                .form-group {
+                    .email-content {
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 10px 0;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+.add-shadow {
+    padding: 0 90px 10px 90px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+hr {
+    margin: 77px 0 0 0;
+}
+
+// Header
+
+.header {
+    .hero-content {
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2a2a2e;
+        }
+
+        p {
+            color: #B9B9BA;
+            font-size: 18px;
+        }
+
+        .hero-icon {
+            .flight-landing {
+                display: flex;
+                background-color: #229fd9;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 18px;
+                margin-top: 8px;
+              }
+
+              .hotel-landing {
+                display: flex;
+                background-color: #229fd9;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 18px;
+                margin-top: 8px;
+              }
+
+              .train-landing {
+                display: flex;
+                background-color: #229fd9;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 18px;
+                margin-top: 8px;
+                
+              }
+
+              .restaurant-landing {
+                display: flex;
+                background-color: #229fd9;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 18px;
+                margin-top: 8px;
+              }
+        }
+    }
+    
+    .hero-img {
+        background: url("../images/hero.jpg");
+        background-size: cover;
+        width: 480px;
+        height: 421px;
+        border-radius: 198px 20px 0px 20px;
+    }
+}
+
+// Trip Search
+.trip-search {
+    background-color: #229FD9;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: white;
+
+    .trip-input {
+        padding: 50px 30px;
+        .radio-button {
+            input[type="radio"]:after {
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: #d1d3d1;
+                content: "";
+                display: inline-block;
+                visibility: visible;
+                border: 2px solid white;
+              }
+            
+              input[type="radio"]:checked:after {
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: #f1d14f;
+                content: "";
+                display: inline-block;
+                visibility: visible;
+                border: 2px solid white;
+              }
+        }
+        
+          .search-button {
+            padding: 10px 30px;
+            background-color: #229fd9;
+            -webkit-box-shadow: 10px 12px 32px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: 10px 12px 32px 0px rgba(0, 0, 0, 0.21);
+            border-radius: 20px;
+            cursor: pointer;
+          }
+    }
+
+    .passenger-input {
+        select,input {
+            font-size: 16px;
+            background-color: #229FD9;
+            box-sizing: border-box;
+            padding: 15px 50px;
+            width: 190px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            -webkit-box-shadow: 10px 14px 31px 0px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 10px 14px 31px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 10px 14px 31px 0px rgba(0, 0, 0, 0.25);
+            outline: none;
+        }
+
+        input::placeholder {
+            font-family: 'Montserrat Alternates';
+        }
+
+        select {
+            font-family: 'Montserrat Alternates';
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .from {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 18px;
+                margin-left: 22px;
+            }
+        }
+
+        .to {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 22px;
+                margin-left: 22px;
+            }
+        }
+
+        .departure {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 15px;
+                margin-left: 22px;
+            }
+        }
+
+        .return {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 15px;
+                margin-left: 22px;
+            }
+        }
+
+        .passenger {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 15px;
+                margin-left: 22px;
+            }
+        }
+        
+    }
+
+      
+}
+
+// Popular Pick
+
+.popular-pick {
+    h1 {
+        font-family: 'Montserrat Alternates';
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .popular-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        height: 100%;
+        column-gap: 10px;
+        row-gap: 60px;
+        grid-template-areas: 
+        "taiwan us uk"
+        "taiwan dubai id"
+        ;
+        place-content: space-between;
+        overflow: hidden;
+
+        .taiwan {
+            grid-area: taiwan;
+            position: relative;
+            
+            .images {
+
+                figure {
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 20px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            .content {
+                color: white;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 30px;
+                margin-left: 20px;
+            }
+
+            .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #2a2a2e;
+                background-color: #F1D14F;
+                padding: 5px 40px;
+                border-radius: 0 20px;
+            }
+        }
+
+        .us {
+            grid-area: us;
+            position: relative;
+
+            .images {
+                figure {
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 20px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            h2 {
+                color: white;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #2a2a2e;
+                background-color: #F1D14F;
+                padding: 5px 40px;
+                border-radius: 0 20px;
+            }
+        }
+
+        .uk {
+            grid-area: uk;
+            position: relative;
+
+            .images {
+                figure {
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 20px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            h2 {
+                color: white;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #2a2a2e;
+                background-color: #F1D14F;
+                padding: 5px 40px;
+                border-radius: 0 20px;
+            }
+        }
+
+        .dubai {
+            grid-area: dubai;
+            position: relative;
+
+            .images {
+                figure {
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 20px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            h2 {
+                color: white;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #2a2a2e;
+                background-color: #F1D14F;
+                padding: 5px 40px;
+                border-radius: 0 20px;
+            }
+        }
+
+        .id {
+            grid-area: id;
+            position: relative;
+
+            .images {
+                figure {
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 20px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            h2 {
+                color: white;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #2a2a2e;
+                background-color: #F1D14F;
+                padding: 5px 40px;
+                border-radius: 0 20px;
+            }
+        }
+    }
+}
+
+// Hotels with Beauty Backyard
+.hotels {
+    h1 {
+        font-family: "Montserrat Alternates";
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    .hotels-img {
+        .images {
+            img {
+                width: 250px;
+            }
+        }
+        .card {
+            border: none;
+            overflow: hidden;
+            margin: 0 10px;
+            position: relative;
+
+            .images {
+                figure {
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 10px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            .details {
+                h4{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .star-map {
+                    .map {
+                        .places {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .price-text{
+                    color: #717174;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .price {
+                    color: #F95959;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .popular-choice {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: #F95959;
+                    color: white;
+                    padding: 2px 15px;
+                    border-radius: 0 10px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// Restaurant with Beauty Scenery
+
+.restaurants {
+    h1 {
+        font-family: "Montserrat Alternates";
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    .restaurants-img {
+        img {
+            width: 250px;
+            height: 160px;
+        }
+        .card {
+            border: none;
+            overflow: hidden;
+            margin: 0 10px;
+
+            .images {
+                figure {
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                figure img {
+                    border-radius: 10px;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                figure:hover img {
+                    -webkit-transform: scale(1.3);
+	                transform: scale(1.3);
+                }
+            }
+
+            .details {
+                h4{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                .places{
+                    color: #717174;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .popular-choice {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: #229FD9;
+                    color: white;
+                    padding: 2px 15px;
+                    border-radius: 0 10px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// Happy Family 
+.happy {
+    .happy-content {
+        padding: 10px 20px;
+
+        .happy-img {
+            margin: 0 40px;
+            img {
+                width: 467px;
+                height: 577px;
+            }
+        }
+
+        .happy-review {
+            h4 {
+                font-size: 28px;
+                font-weight: 600;
+                color: #2a2a2e;
+            }
+
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+                color: #2a2a2e;
+            }
+
+            p {
+                color: #B9B9BA;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-review {
+                border-radius: 10px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+
+    .container {
+      background-color: #333;
+
+      .logo-detail {
+        color: #817e7e;
+
+        .social {
+          ul {
+            li {
+              list-style: none;
+              margin: 0 3px;
+            }
+          }
+        }
+      }
+
+      .menu {
+        padding: 0 100px;
+        flex-grow: 2;
+
+        ul {
+          li {
+            list-style: none;
+            margin-top: 10px;
+            a {
+              text-decoration: none;
+              color: #817e7e;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+
+      p {
+        margin-top: 100px;
+      }
+    }
+}
+
+// Animation
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 30%;
+    }
+
+    50% {
+      opacity: 50%;
+    }
+
+    80% {
+      opacity: 80%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
+//   Responsive
+
+@media only screen and (max-width: 768px) {
+    .hero-content {
+        padding: 50px;
+    }
+    .hero-icon {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .passenger-input {
+        .from {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .to {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .departure {
+            input{
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .return {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .passenger {
+            select {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .popular-pick {
+        .popular-grid {
+            display: flex;
+            flex-direction: column;
+
+            .taiwan {
+                .price {
+                    display: none;
+                }
+            }
+
+            .us {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .uk {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .dubai {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .id {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hotels {
+        .hotels-img {
+            .images {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        .restaurants-img {
+            img {
+                width: 100%;
+                height: 280px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-content {
+        padding: 50px;
+    }
+    .hero-icon {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .trip-search {
+        position: relative;
+        padding-bottom: 30px;
+        .trip-input {
+            
+            .search-button {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .passenger-input {
+        .from {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .to {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .departure {
+            input{
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .return {
+            input {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .passenger {
+            select {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .popular-pick {
+        .popular-grid {
+            display: flex;
+            flex-direction: column;
+
+            .taiwan {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .us {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .uk {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .dubai {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+
+            .id {
+                img {
+                    width: 100%;
+                }
+                .price {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hotels {
+        .hotels-img {
+            .images {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        .restaurants-img {
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+    .happy {
+        display: none;
+    }
+
+    footer {
+        overflow: hidden;
+        
+        .container {
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+// Details Page
+
+.details {
+    .details-img {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas: "main-img img-featured"
+        "main-img img-featured-dua";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .main-img {
+            grid-area: main-img;
+
+            figure {
+                overflow: hidden;
+                max-width: 610px;
+                border-radius: 20px;
+            }
+
+            figure img {
+                max-width:610px;
+                background-size: cover;
+                border-radius: 20px;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            figure:hover img {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+
+        .featured-img {
+            grid-area: img-featured;
+
+            figure {
+                overflow: hidden;
+                max-width: 435px;
+                border-radius: 20px;
+            }
+
+            figure img {
+                max-width:435px;
+                border-radius: 20px;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            figure:hover img {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+
+        .featured-img-dua {
+            grid-area: img-featured-dua;
+
+            figure {
+                overflow: hidden;
+                max-width: 435px;
+                border-radius: 20px;
+            }
+
+            figure img {
+                max-width:435px;
+                background-size: cover;
+                border-radius: 20px;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            figure:hover img {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+.details-content {
+    display: flex;
+    justify-content: space-between;
+    .details-text {
+        max-width: 60%;
+        text-align: justify;
+    }
+
+    .details-book {
+        .price-book {
+            span {
+              color: #1bbc9c;
+              font-weight: 500;
+            }
+    
+            p {
+              color: #c4c4c4;
+            }
+          }
+
+        .add-night {
+            .min {
+              button {
+                background-color: #f95959;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 20px 0 0 20px;
+                color: white;
+                font-size: 30px;
+              }
+            }
+    
+            input[type="text"] {
+              background-color: #ebebeb;
+              border: none;
+            }
+    
+            .plus {
+              button {
+                background-color: #1bbc9c;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 0 20px 20px 0;
+                color: white;
+                font-size: 30px;
+              }
+            }
+          }
+
+        .check-in {
+            position: relative;
+            input[type="text"] {
+              width: 100%;
+              padding: 15px 60px;
+              border-radius: 20px;
+              background-color: #ebebeb;
+              border: none;
+            }
+    
+            img {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              margin-left: 12px;
+              margin-bottom: 12px;
+            }
+        }
+
+        .pay {
+            span {
+              color: #1bbc9c;
+            }
+        }
+      
+          button {
+            width: 100%;
+            background-color: #2097ce;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+}
+
+// Details Responsive
+
+@media only screen and (max-width: 1024px) {
+    .details {
+        .details-img {
+            display: flex;
+            flex-direction: column;
+
+            .main-img {
+                width: 100%;
+            }
+
+            .featured-img {
+                max-width: 80%;
+                background-size: cover;
+            }
+
+            .featured-img-dua {
+                max-width: 80%;
+                background-size: cover;
+            }
+        }
+    }
+
+    .details-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .details-text {
+            max-width:100%;
+            padding-left: 50px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+// About Pages
+
+// About Pages Responsive
+
+@media only screen and (max-width:1024px) {
+    .about-us {
+        text-align: center;
+        .about-content {
+            flex-direction: column;
+    
+            .bolang-img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .bolang-partner {
+        .partner-img {
+            img{
+                padding: 10px;
+            }
+        }
+    }
+
+    footer {
+        overflow: hidden;
+        background-color: #fff;
+        
+        .container {
+            .logo-detail {
+                display: none;
+            }
+            .menu {
+                .beginner,.explore,.contact{
+                    display: none;
+                }
+            }
+        }
+
+        .copyright {
+            color: #2a2a2e;
+        }
+    }
+
+    
+}
+
+// Contact Pages
+
+.contact {
+    .contact-banner {
+      background-color: #229fd9;
+      color: white;
+    }
+
+    .contact-content {
+      padding: 100px 0;
+      .form-contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          input[type="text"],
+          input[type="email"] {
+            padding: 5px 20px;
+          }
+
+          label {
+            margin-top: 20px;
+          }
+
+          button {
+            margin-top: 20px;
+            background-color: #2097ce;
+            color: white;
+            font-weight: 500;
+          }
+
+          button:hover {
+            margin-top: 20px;
+            background-color: #229fd9;
+            color: white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+//   Contact Responsive
+
+@media only screen and (max-width:1024px) {
+    .contact {
+        .contact-banner {
+            padding: 0 10px;
+        }
+
+        .contact-content {
+            .form-img {
+                display: none;
+            }
+        }
+    }
+}
+
+// 404 Pages
+
+.container {
+    .not-found {
+        height : 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// 404 Pages Responsive
+
+@media only screen and (max-width:1024px) {
+    .container {
+        .not-found {
+            padding: 0 20px;
+
+            img {
+                width: 300px;
+            }
+
+            button {
+                margin-top: 20px;
+            }
+        }
+    }
+}

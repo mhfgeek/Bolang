@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolang | About Us</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid pt-3">
+          <a href="#" class="navbar-brand">
+            <img src="frontend/images/logo.svg" alt="Bolang logo" />
+          </a>
+          <!-- Responsive Navigasi -->
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mx-auto mr-3">
+              <li class="nav-item mx-md-2">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item dropdown mx-md-2">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Book</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a href="flight.html" class="dropdown-item">Flight</a></li>
+                  <li><a href="train.html" class="dropdown-item">Train</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a href="hotel.html" class="dropdown-item">Hotel</a></li>
+                  <li><a href="restaurant.html" class="dropdown-item">Restaurant</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a href="about-us.html" class="nav-link active">About</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="sign-in">
+              <!-- Mobile Button -->
+              <form action="#" class="form-inline d-sm-block d-md-none">
+                <button class="btn btn-login my-2 my-sm-0 px-4">Sign in</button>
+              </form>
+
+              <!-- Desktop Button -->
+              <form action="#" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                <button class="btn btn-primary btn-login btn-navbar-right my-2 my-sm-0 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+              </form>
+            </div>
+          </div>
+          <!-- End Menu -->
+        </div>
+      </nav>
+    </div>
+  <!-- End of Navigasi -->
+
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bolang Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form action="">
+                <label for="username" class="d-block">Username :</label>
+                <input type="text">
+
+                <label for="password" class="d-block mt-3">Password :</label>
+                <input type="password" name="" id="">
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Register</button>
+            <button type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- About -->
+    <div class="container pt-5">
+      <!-- Breadcumb -->
+      <nav aria-label="breadcrumb" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+      </nav>
+
+      <!-- End of Breadcumb -->
+      <div class="about-us mt-5" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+        <div class="about-title">
+          <h3>About Bolang</h3>
+        </div>
+        <div class="about-content mt-5 d-flex">
+          <div class="bolang-img">
+            <img src="/frontend/images/logo.svg" alt="" />
+          </div>
+          <p class="px-5">
+            bolang is a technology company located in taiwan that helps you find a vacation spot with your family at a low price but good quality. From it's beginning as an e-commerce start-up based in Tainan, Taiwan in 2021. Bolang has
+            grown to offer a global network of 2 million people in more than 60 countries and territories worldwide.It provides travelers with easy access to a wide choice of luxury and budget hotels, apartments, homes, and villas to suit
+            all budgets and travel occasions.
+          </p>
+        </div>
+        <div class="bolang-partner mx-auto text-center mt-5">
+          <h3>Our Partner</h3>
+          <div class="partner-img">
+            <img src="frontend/images/Partner/tsu.png" alt="" width="100px" class="ms-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000"/>
+            <img src="frontend/images/Partner/cluster.png" alt="" width="150px" class="ms-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1100"/>
+            <img src="frontend/images/Partner/metaalmedia.png" alt="" width="150px" class="ms-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="1200"/>
+            <img src="frontend/images/Partner/bca.png" alt="" width="150px" class="ms-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1300"/>
+            <img src="frontend/images/Partner/mandiri.png" alt="" width="150px" class="ms-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="750" data-aos-duration="1400"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of About -->
+
+    <!-- Footer -->
+    <footer class="py-5 mt-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo-detail">
+          <img src="frontend/images/logo.svg" alt="" width="180px" />
+          <p class="mt-3">We kaboom your beauty holiday<br />instantly and memorable.</p>
+          <div class="social">
+            <ul class="d-flex justify-content-center">
+              <li>
+                <a href=""><img src="frontend/images/Icons/fb.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="frontend/images/Icons/twtr.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="frontend/images/Icons/igg.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="frontend/images/Icons/yt.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu d-flex justify-content-between">
+          <div class="beginner">
+            <ul>
+              <h6>For Beginners</h6>
+              <li><a href="">New Account</a></li>
+              <li><a href="">Start Booking</a></li>
+              <li><a href="">Payments</a></li>
+            </ul>
+          </div>
+          <div class="explore">
+            <ul>
+              <h6>Explore Us</h6>
+              <li><a href="">Our Careers</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <ul>
+              <h6>Contact Us</h6>
+              <li><a href="mailto:b107116083@tsu.edu.tw">support@bolang.com</a></li>
+              <li><a href="tel:+62 8979 5623 1234 ">+62 8979 5623 1234 </a></li>
+              <li><a href="">Tainan, Taiwan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2021 Bolang.com. All right reserved.</p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="frontend/scripts/main.js"></script>
+</body>
+</html>

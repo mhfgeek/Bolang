@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolang | Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+<body>
+    
+    <!-- Navigasi -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid pt-3">
+            <a href="#" class="navbar-brand">
+              <img src="frontend/images/logo.svg" alt="Bolang logo" />
+            </a>
+            <!-- Responsive Navigasi -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navb">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navb">
+              <ul class="navbar-nav mx-auto mr-3">
+                <li class="nav-item mx-md-2">
+                  <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown mx-md-2">
+                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Book</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="flight.html" class="dropdown-item">Flight</a></li>
+                    <li><a href="train.html" class="dropdown-item">Train</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a href="hotel.html" class="dropdown-item">Hotel</a></li>
+                    <li><a href="restaurant.html" class="dropdown-item">Restaurant</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="about-us.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+  
+              <div class="sign-in">
+                <!-- Mobile Button -->
+                <form action="#" class="form-inline d-sm-block d-md-none">
+                  <button class="btn btn-login my-2 my-sm-0 px-4">Sign in</button>
+                </form>
+  
+                <!-- Desktop Button -->
+                <form action="#" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                  <button class="btn btn-primary btn-login btn-navbar-right my-2 my-sm-0 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                </form>
+              </div>
+            </div>
+            <!-- End Menu -->
+          </div>
+        </nav>
+    </div>
+    <!-- End of Navigasi -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+          <div class="header d-flex justify-content-between px-5 pt-3">
+            <div class="modal-title" id="exampleModalLabel">
+              <img src="frontend/images/logo.svg" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <form action="" class="border px-4 py-4">
+                <h6 class="fw-bold py-3">Login</h6>
+                <div class="form-group mt-3">
+                  <div class="email-content d-flex justify-content-between">
+                    <label for="email" class="form-label d-block fw-bold">E-mail</label>
+                    <span>Need an account? <a href="#" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</a></span>
+                  </div>
+                  <input type="email" class="form-control" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="password" class="form-label d-block mt-3 fw-bold">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+  
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="keepmesign">
+                  <label class="form-check-label" for="keepmesign">
+                    Keep me signed
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary my-2">Log in</button>
+            </form>
+          </div>
+          <div class="footer text-center py-2">
+            <span>Copyright 2021 Bolang.com. All right reserved.</span>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+          <div class="header d-flex justify-content-between px-5 pt-3">
+            <div class="modal-title" id="exampleModalLabel">
+              <img src="frontend/images/logo.svg" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <form action="" class="border px-4 py-4">
+                <h6 class="fw-bold py-3">Register an Account</h6>
+                <div class="form-group mt-3">
+                  <div class="email-content d-flex justify-content-between">
+                    <label for="email" class="form-label d-block fw-bold">E-mail</label>
+                    <span>Already have account? <a href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></span>
+                  </div>
+                  <input type="email" class="form-control" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="password" class="form-label d-block mt-3 fw-bold">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="password" class="form-label d-block mt-3 fw-bold">Password Confirmation</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary my-3">Sign Up</button>
+            </form>
+          </div>
+          <div class="footer text-center py-2">
+            <span>Copyright 2021 Bolang.com. All right reserved.</span>
+          </div>
+      </div>
+      </div>
+    </div>
+  
+
+    <hr>
+
+    <!-- Content -->
+        <div class="container">
+            <!-- Header -->
+            <div class="header row d-flex py-5 mt-4 justify-content-between align-items-center" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <div class="hero-content col-lg-6">
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">Forget your work,<br>have fun with us.</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1500">We provide what you need to enjoy your holiday. time to take another memorable moments.</p>
+                    <div class="hero-icon d-sm-none d-md-flex justify-content-evenly mt-5">
+                        <div class="flight-landing" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                            <a href="#">
+                              <img src="frontend/images/Icons/flight-landing.svg" alt="Flight" width="49px" />
+                            </a>
+                          </div>
+              
+                         <div class="train-landing mx-3" data-aos="fade-up"
+                         data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1200">
+                          <a href="#">
+                            <img src="frontend/images/Icons/train-landing.svg" alt="Train" width="43px" />
+                          </a>
+                         </div>
+              
+                          <div class="hotel-landing" data-aos="fade-up"
+                          data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="1400">
+                            <a href="#">
+                              <img src="frontend/images/Icons/hotel-landing.svg" alt="Hotel" width="43px" />
+                            </a>
+                          </div>
+              
+                          <div class="restaurant-landing mx-3" data-aos="fade-up"
+                          data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1600">
+                            <a href="#">
+                              <img src="frontend/images/Icons/restaurant-landing.svg" alt="Restaurant" width="42px" />
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                <div class="hero-img col-lg-4" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="1300"></div>    
+                </div>
+            </div>
+            <!-- End of Header -->
+            <!-- Trip Search -->
+            <div class="trip-search container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <div class="trip-input d-flex justify-content-between align-items-center">
+                    <div class="radio-button">
+                      <label for="round" class="me-4">
+                        <input type="radio" name="trip" id="flight" checked onclick="roundTrip()"/>
+                        <span class="mx-2">Round Trip</span>
+                      </label>
+          
+                      <label for="oneway">
+                        <input type="radio" name="trip" id="oneway" onclick="oneWay()"/>
+                        <span class="mx-2">One Way</span>
+                      </label>
+                    </div>
+          
+                    <div class="search-button me-3">
+                      <img src="frontend/images/Icons/search.svg" alt="search" width="20px" />
+                    </div>
+                </div>
+                
+                <form action="" autocomplete="off">
+                    <div class="passenger-input d-lg-flex d-sm-block justify-content-between mt-2 pb-5">
+                        <div class="from">
+                            <img src="frontend/images/Icons/from.svg" alt="From" width="30px">
+                            <input type="text" placeholder="From" class="mx-3 mb-sm-2">
+                        </div>
+                        <div class="to">
+                            <img src="frontend/images/Icons/to.svg" alt="To" width="30px">
+                            <input type="text" placeholder="To" class="mx-3 mb-sm-2">
+                        </div>
+
+                        <div class="departure">
+                            <img src="frontend/images/Icons/date.svg" alt="Departure" width="25px">
+                            <input type="text" placeholder="Departure" class="mx-3 mb-sm-2" id="depart">
+                        </div>
+                        <div class="return">
+                            <img src="frontend/images/Icons/date.svg" alt="Return" width="25px">
+                            <input type="text" placeholder="Return" class="mx-3 mb-sm-2" id="returntravel">
+                        </div>
+                        <div class="passenger">
+                            <img src="frontend/images/Icons/passenger.svg" alt="From" width="25px">
+                            <select name="passenger" id="passenger" class="mx-3 mb-sm-2">
+                                <option value="passenger">Adults</option>
+                                <option value="passenger">Child</option>
+                                <option value="passenger">Passenger</option>
+                                <hr>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- End of Trip -->
+            <!-- Popular Pick -->
+            <section class="popular-pick container py-5 mt-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <h1>Popular Pick</h1>
+
+                <div class="popular-grid py-3">
+                    <div class="taiwan" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1200">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/taiwan.jpg" alt="" width="420px"/></figure></a>
+                        </div>
+                        <div class="content">
+                            <h2>Taiwan</h2>
+                            <p>3903 Accomodations</p>
+                        </div>
+                        <div class="price">150 USD</div>
+                      </div>
+                      <div class="us" data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1400">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/hawaii.jpg" alt="" width="330px"/></figure></a>
+                        </div>
+                        <h2>US</h2>
+                        <p>2457 Accomodations</p>
+                        <div class="price">400 USD</div>
+                      </div>
+                      <div class="uk" data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="1600">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/london.jpg" alt="" width="330px"/></figure></a>
+                        </div>
+                        <div class="content">
+                            <h2>UK</h2>
+                            <p>1987 Accomodations</p>
+                        </div>
+                        <div class="price">200 USD</div>
+                      </div>
+                      <div class="dubai" data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1800">
+                        <div class="images">
+                           <a href="#"><figure><img src="frontend/images/dubai.jpg" alt="" width="330px"/></figure></a>
+                        </div>
+                        <div class="content">
+                            <h2>Dubai</h2>
+                            <p>3554 Accomodations</p>
+                        </div>
+                        <div class="price">210 USD</div>
+                      </div>
+                      <div class="id" data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom" data-aos-delay="750" data-aos-duration="2000">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/id.jpg" alt="" width="330px"/></figure></a>
+                        </div>
+                        <div class="content">
+                            <h2>Indonesia</h2>
+                            <p>3456 Accomodations</p>
+                        </div>
+                        <div class="price">100 USD</div>
+                      </div>
+                </div>
+            </section>
+            <!-- End of Popular Pick -->
+            <!-- Hotels with Beauty Backyard -->
+            <section class="hotels container py-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <h1>Hotels with beauty backyard</h1>
+
+                <div class="hotels-img d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center py-3">
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/hotel-category-1.jpg" alt=""></figure></a>
+                        </div>
+                        <div class="details">
+                            <h4>Lalu Hotel</h4>
+                            <div class="star-map d-flex justify-content-between">
+                                <div class="star">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                </div>
+
+                                <div class="map">
+                                    <img src="frontend/images/map.svg" alt="" />
+                                    <span class="places"><a href=""> Santa Monica</a></span>
+                                </div>
+                            </div>
+                            <p class="price-text">Price per night</p>
+                            <p class="price">USD $500</p>
+                            <div class="popular-choice">Popular Choice</div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1400">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/hotel-category-2.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>Grace Garden</h4>
+                            <div class="star-map d-flex justify-content-between">
+                                <div class="star">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/nostar.svg" alt="">
+                                </div>
+
+                                <div class="map">
+                                    <img src="frontend/images/map.svg" alt="" />
+                                    <span class="places"><a href="">London</a></span>
+                                </div>
+                            </div>
+                            <p class="price-text">Price per night</p>
+                            <p class="price">USD $480</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="1600">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/hotel-category-3.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>Fleur de Hotel</h4>
+                            <div class="star-map d-flex justify-content-between">
+                                <div class="star">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/nostar.svg" alt="">
+                                </div>
+
+                                <div class="map">
+                                    <img src="frontend/images/map.svg" alt="" />
+                                    <span class="places"><a href="">Paris</a></span>
+                                </div>
+                            </div>
+                            <p class="price-text">Price per night</p>
+                            <p class="price">USD $450</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1800">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/hotel-category-4.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>Garuda Hotel</h4>
+                            <div class="star-map d-flex justify-content-between">
+                                <div class="star">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/star.svg" alt="">
+                                    <img src="frontend/images/nostar.svg" alt="">
+                                    <img src="frontend/images/nostar.svg" alt="">
+                                </div>
+
+                                <div class="map">
+                                    <img src="frontend/images/map.svg" alt="" />
+                                    <span class="places"><a href="">Jakarta</a></span>
+                                </div>
+                            </div>
+                            <p class="price-text">Price per night</p>
+                            <p class="price">USD $360</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Hotels with Beauty Backyard -->
+            <!-- Restaurant with Beauty Scenery -->
+            <section class="restaurants container py-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <h1>Restaurant with beauty Scenery</h1>
+
+                <div class="restaurants-img d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center py-3">
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/resto-category-1.jpg" alt=""></figure></a>
+                        </div>
+                        <div class="details">
+                            <h4>Duo Duo</h4>
+                            <p class="places">Tainan, Taiwan</p>
+                            <div class="popular-choice">Popular Choice</div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1200">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/resto-category-2.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>Sukma's Seblak</h4>
+                            <p class="places">Cirebon, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="1400">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/resto-category-3.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>Brave Beer</h4>
+                            <p class="places">Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1600">
+                        <div class="images">
+                            <a href="#"><figure><img src="frontend/images/resto-category-4.jpg" alt=""></figure></a>
+                        </div>
+
+                        <div class="details">
+                            <h4>RM Padang</h4>
+                            <p class="places">Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Hotels with Beauty Scenery -->
+            <!-- Happy Family -->
+            <section class="happy container py-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="250" data-aos-duration="3000">
+                <div class="happy-content d-flex align-items-center">
+                    <div class="happy-img">
+                        <img src="frontend/images/testimonial-landingpages.jpg" alt="">
+                    </div>
+                    <div class="happy-review">
+                        <div class="star mb-3">
+                            <img src="frontend/images/star.svg" alt="">
+                            <img src="frontend/images/star.svg" alt="">
+                            <img src="frontend/images/star.svg" alt="">
+                            <img src="frontend/images/star.svg" alt="">
+                            <img src="frontend/images/star.svg" alt="">
+                        </div>
+
+                        <h4 class="mb-3">Happy Family</h4>
+
+                        <h1 class="mb-3">Thanks! My family have a great holiday.</h1>
+
+                        <p>Opiksuh, CEO Cluster</p>
+
+                        <a href="#"><button class="btn btn-primary btn-review">Read Full Story</button></a>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Happy Family -->
+            <!-- Footer -->
+            <footer class="py-5 mt-5">
+                <div class="container d-flex justify-content-center justify-content-lg-between align-items-center">
+                  <div class="logo-detail">
+                    <img src="frontend/images/logo.svg" alt="" width="180px">
+                    <p class="mt-3">We kaboom your beauty holiday<br>instantly and memorable.</p>
+                    <div class="social">
+                      <ul class="d-flex justify-content-center">
+                        <li><a href=""><img src="frontend/images/Icons/fb.svg" alt=""></a></li>
+                        <li><a href=""><img src="frontend/images/Icons/twtr.svg" alt=""></a></li>
+                        <li><a href=""><img src="frontend/images/Icons/igg.svg" alt=""></a></li>
+                        <li><a href=""><img src="frontend/images/Icons/yt.svg" alt=""></a></li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <div class="menu d-lg-flex d-none  justify-content-between">
+                    <div class="beginner">
+                      <ul>
+                        <h6>For Beginners</h6>
+                        <li><a href="">New Account</a></li>
+                        <li><a href="">Start Booking</a></li>
+                        <li><a href="">Payments</a></li>
+                      </ul>
+                    </div>
+                    <div class="explore">
+                      <ul>
+                        <h6>Explore Us</h6>
+                        <li><a href="">Our Careers</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                      </ul>
+                    </div>
+                    <div class="contact">
+                      <ul>
+                        <h6>Contact Us</h6>
+                        <li><a href="mailto:b107116083@tsu.edu.tw">support@bolang.com</a></li>
+                        <li><a href="tel:+62 8979 5623 1234 ">+62 8979 5623 1234 </a></li>
+                        <li><a href="">Tainan, Taiwan</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="copyright">
+                  <p>Copyright &copy; 2021 Bolang.com. All right reserved.</p>
+                </div>
+              </footer>
+            <!-- End of Footer -->
+        </div>
+    <!-- End of Content -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="frontend/scripts/main.js"></script>
+</body>
+</html>
