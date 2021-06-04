@@ -1,0 +1,111 @@
+.train {
+    background-color: #229FD9;
+    top: -30px;
+    position: relative;
+
+    .header {
+
+        .hero-content {
+            h1 {
+                color: white;
+            }
+        }
+
+        .hero-img {
+            background: url("../images/train.jpg");
+            background-size: cover;
+            width: 600px;
+            height: 421px;
+            border-radius: 198px 20px 0px 20px;
+        }
+    }
+}
+
+.content {
+    form {
+        margin: 0 0 20px 0;
+        button {
+            border-radius: 20px;
+            border : none;
+            width: 90px;
+            padding: 5px 10px;
+            margin: 0 10px;
+        }
+    }
+
+    .schedule {
+        border: 6px solid #229FD9;
+        border-radius: 20px 20px 0 0;
+        z-index: 10;
+
+        .header {
+            background-color: #F1D14F;
+            padding: 30px 30px 20px 30px;
+            border-radius: 15px 15px 0 0;
+
+            .train-trip {
+                .trip {
+                    .trip-destination {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .change-search {
+                button {
+                    background-color: #229FD9;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .schedule-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px auto;
+            border-top: 1px solid #229FD9;
+
+            thead {
+                th {
+                    width: 20%;
+                    margin-right: 10px;
+                    background-color: #229FD9;
+                    padding: 20px;
+                    text-align: center;
+                    color: white;
+                    font-weight: 300;
+                }
+            }
+
+            tbody {
+                .clickable {
+                    cursor: pointer;
+                }
+                td {
+                    margin-top: 5px;
+                    width: 100%;
+                    margin-right: 10px;
+                    background-color: #c4c4c4;
+                    padding: 20px;
+                    text-align: center;
+                    font-weight: 400;
+
+                    .choice {
+                        button {
+                            width: 80px;
+                            background-color: #229FD9;
+                            color: white;
+                            border: none;
+                            border-radius: 10px;
+                            margin-top: 1px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

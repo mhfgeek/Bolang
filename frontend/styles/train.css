@@ -1,0 +1,95 @@
+.train {
+  background-color: #229FD9;
+  top: -30px;
+  position: relative;
+}
+
+.train .header .hero-content h1 {
+  color: white;
+}
+
+.train .header .hero-img {
+  background: url("../images/train.jpg");
+  background-size: cover;
+  width: 600px;
+  height: 421px;
+  border-radius: 198px 20px 0px 20px;
+}
+
+.content form {
+  margin: 0 0 20px 0;
+}
+
+.content form button {
+  border-radius: 20px;
+  border: none;
+  width: 90px;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+.content .schedule {
+  border: 6px solid #229FD9;
+  border-radius: 20px 20px 0 0;
+  z-index: 10;
+}
+
+.content .schedule .header {
+  background-color: #F1D14F;
+  padding: 30px 30px 20px 30px;
+  border-radius: 15px 15px 0 0;
+}
+
+.content .schedule .header .train-trip .trip .trip-destination {
+  font-size: 24px;
+}
+
+.content .schedule .header .change-search button {
+  background-color: #229FD9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.content .schedule .schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px auto;
+  border-top: 1px solid #229FD9;
+}
+
+.content .schedule .schedule-table thead th {
+  width: 20%;
+  margin-right: 10px;
+  background-color: #229FD9;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+.content .schedule .schedule-table tbody .clickable {
+  cursor: pointer;
+}
+
+.content .schedule .schedule-table tbody td {
+  margin-top: 5px;
+  width: 100%;
+  margin-right: 10px;
+  background-color: #c4c4c4;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.content .schedule .schedule-table tbody td .choice button {
+  width: 80px;
+  background-color: #229FD9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=train.css.map */

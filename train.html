@@ -4,19 +4,385 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolang | Home</title>
+    <title>Bolang | Train</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="frontend/styles/main.css">
+    <link rel="stylesheet" href="frontend/styles/train.css">
+    <link rel="stylesheet" href="frontend/styles/timeline.css">
 </head>
 <body>
-    <tbody>
-        <tr class='clickable-row' data-href='url://'>
-            <td>Blah Blah</td> <td>1234567</td> <td>£158,000</td>
-        </tr>
-    </tbody>
+    
+    <!-- Navigasi -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid pt-3">
+            <a href="#" class="navbar-brand">
+              <img src="frontend/images/logo.svg" alt="Bolang logo" />
+            </a>
+            <!-- Responsive Navigasi -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navb">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navb">
+              <ul class="navbar-nav mx-auto mr-3">
+                <li class="nav-item mx-md-2">
+                  <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown mx-md-2">
+                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Book</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="flight.html" class="dropdown-item">Flight</a></li>
+                    <li><a href="train.html" class="dropdown-item">Train</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a href="hotel.html" class="dropdown-item">Hotel</a></li>
+                    <li><a href="restaurant.html" class="dropdown-item">Restaurant</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="about-us.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+  
+              <div class="sign-in">
+                <!-- Mobile Button -->
+                <form action="#" class="form-inline d-sm-block d-md-none">
+                  <button class="btn btn-login my-2 my-sm-0 px-4">Sign in</button>
+                </form>
+  
+                <!-- Desktop Button -->
+                <form action="#" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                  <button class="btn btn-primary btn-login btn-navbar-right my-2 my-sm-0 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                </form>
+              </div>
+            </div>
+            <!-- End Menu -->
+          </div>
+        </nav>
+    </div>
+    <!-- End of Navigasi -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+          <div class="header d-flex justify-content-between px-5 pt-3">
+            <div class="modal-title" id="exampleModalLabel">
+              <img src="frontend/images/logo.svg" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <form action="" class="border px-4 py-4">
+                <h6 class="fw-bold py-3">Login</h6>
+                <div class="form-group mt-3">
+                  <div class="email-content d-flex justify-content-between">
+                    <label for="email" class="form-label d-block fw-bold">E-mail</label>
+                    <span>Need an account? <a href="#" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</a></span>
+                  </div>
+                  <input type="email" class="form-control" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="password" class="form-label d-block mt-3 fw-bold">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+  
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="keepmesign">
+                  <label class="form-check-label" for="keepmesign">
+                    Keep me signed
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary my-2">Log in</button>
+            </form>
+          </div>
+          <div class="footer text-center py-2">
+            <span>Copyright 2021 Bolang.com. All right reserved.</span>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="train">
+        <div class="container">
+            <!-- Header -->
+            <div class="header row d-flex py-5 mt-4 justify-content-between align-items-center" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">
+                <div class="hero-content col-lg-5">
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1000">Forget your work,<br>have fun with us.</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1500">We provide what you need to enjoy your holiday. time to take another memorable moments.
+                    </p>
+                </div>
+                <div class="hero-img col-lg-5" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="1300">
+                </div>    
+            </div>
+        </div>
+        <!-- End of Header -->
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <form action="">
+                <label for="filter">Filter :</label>
+                <button>Station</button>
+                <button>Class</button>
+                <button>Train</button>
+                <button>Time</button>
+            </form>
+
+            <div class="schedule">
+                <div class="header d-flex justify-content-between align-items-center">
+                    <div class="train-trip d-flex justify-content-between align-items-center">
+                        <div class="trip">
+                            <div class="trip-destination d-flex">
+                                <div class="from">台南 Tainan</div>
+                                <div class="arrow mx-2">🠖</div>
+                                <div class="departure">台北 Taipei </div>   
+                            </div>
+                            <div class="trip-detail d-flex align-items-center justify-content-between">
+                                <div class="trip-detail-time">
+                                    <p class="mt-2"><span class="day me-1">Monday</span>,<span class="date me-1">12</span><span class="month me-1">May</span><span class="year me-1">2021</span></p>
+                                </div>
+                                <div class="trip-detail-passangger">
+                                    <p><span class="me-1">1</span><span>Adult</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="change-search">
+                        <button>Change Search</button>
+                    </div>
+                </div>
+
+                <table class="schedule-table">
+                    <thead>
+                        <tr class="d-flex justify-content-between px-3">
+                            <th>Time</th>
+                            <th>Code</th>
+                            <th>Depart</th>
+                            <th>Destination</th>
+                            <th>Price per Person</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="clickable d-flex justify-content-between px-3" onclick="showTimeline()">
+                            <td class="hour">08.10</td>
+                            <td class="code">1322</td>
+                            <td class="depart">台南 Tainan</td>
+                            <td class="destination">台北 Taipei</td>
+                            <td><div class="price">$350</div><div class="choice"><button>choice</button></div></td>
+                        </tr>
+
+                        <tr class="clickable d-flex justify-content-between px-3" onclick="showTimeline()">
+                            <td class="hour">08.10</td>
+                            <td class="code">1322</td>
+                            <td class="depart">台南 Tainan</td>
+                            <td class="destination">台北 Taipei</td>
+                            <td><div class="price">$350</div><div class="choice"><button>choice</button></div></td>
+                        </tr>
+
+                        <tr class="clickable d-flex justify-content-between px-3" onclick="showTimeline()">
+                            <td class="hour">08.10</td>
+                            <td class="code">1322</td>
+                            <td class="depart">台南 Tainan</td>
+                            <td class="destination">台北 Taipei</td>
+                            <td><div class="price">$350</div><div class="choice"><button>choice</button></div></td>
+                        </tr>
+
+                        <tr class="clickable d-flex justify-content-between px-3" onclick="showTimeline()">
+                            <td class="hour">08.10</td>
+                            <td class="code">1322</td>
+                            <td class="depart">台南 Tainan</td>
+                            <td class="destination">台北 Taipei</td>
+                            <td><div class="price">$350</div><div class="choice"><button>choice</button></div></td>
+                        </tr>
+
+                        <tr class="clickable d-flex justify-content-between px-3" id="clickable" onclick="showTimeline()">
+                            <td class="hour">08.10</td>
+                            <td class="code">1322</td>
+                            <td class="depart">台南 Tainan</td>
+                            <td class="destination">台北 Taipei</td>
+                            <td><div class="price">$350</div><div class="choice"><button>choice</button></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Timeline -->
+                <div class="timeline" id="timeline">
+                  <div class="container timeline-header">
+                    <div class="menu d-flex">
+                      <div href="#" class="route" id="route" onclick="showRoute()">Train Route</div>
+                      <div href="#" class="detail-price mx-3" id="detail-price" onclick="showPrice()">Detail Price</div>
+                    </div>
+                    <div class="timeline-detail" id="timeline-detail">
+                      <table>
+                        <tr>
+                          <th class="code">1102</th>
+                          <th class="depart">台南 Tainan</th>
+                          <th class="destination">台北 Taipei</th>
+                        </tr>
+                        <tr>
+                          <td>(Local Train)</td>
+                          <td>Depart</td>
+                          <td>Destination</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="flex-parent">
+                    <div class="input-flex-container">
+                      <input type="radio" name="timeline-dot" data-description="1910">
+                      <div class="dot-info" data-description="1910">
+                        <span class="time">08:12</span>
+                        <span class="label">Tainan 台南</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1920">
+                      <div class="dot-info" data-description="1920">
+                        <span class="time">09:12</span>
+                        <span class="label">Chiayi 嘉義</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1950">
+                      <div class="dot-info" data-description="1950">
+                        <span class="time">10:12</span>
+                        <span class="label">Yuanlin</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1930" checked>
+                      <div class="dot-info" data-description="1930">
+                        <span class="time">11:12</span>
+                        <span class="label">Changhua 彰化</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1940">
+                      <div class="dot-info" data-description="1940">
+                        <span class="time">12:12</span>
+                        <span class="label">Taichung 台中</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1960">
+                      <div class="dot-info" data-description="1960">
+                        <span class="time">13:12</span>
+                        <span class="label">Fengyuan</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1970">
+                      <div class="dot-info" data-description="1970">
+                        <span class="time">14:12</span>
+                        <span class="label">Miaoli</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1980">
+                      <div class="dot-info" data-description="1980">
+                        <span class="time">15:12</span>
+                        <span class="label">Hsinchu</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="1990">
+                      <div class="dot-info" data-description="1990">
+                        <span class="time">16:12</span>
+                        <span class="label">Taoyuan</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="2000">
+                      <div class="dot-info" data-description="2000">
+                        <span class="time">17:12</span>
+                        <span class="label">Taipei</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Timeline --> 
+
+                <!-- Detail price -->
+              <div class="detail-price-train" id="detail-price-train">
+                <div class="container">
+                  <div class="code-train">
+                    <div class="code">1105</div>
+                    <div>(Local Train)</div>
+                  </div>
+                  <div class="detail py-4">
+                    <div class="adult d-flex justify-content-between my-4">
+                      <div class="adult-passangger">Adult (x<span class="people ms-2">1</span>)</div>
+                      <div class="price-detail">$<span class="price">350</span></div>
+                    </div>
+                    <div class="child d-flex justify-content-between">
+                      <div class="child-passangger">Child (x<span class="people ms-2">0</span>)</div>
+                      <div class="price-detail">$<span class="price">0</span></div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="total-detail d-flex justify-content-between">
+                      <div class="total">
+                        Total
+                      </div>
+                      <div class="price">
+                        $<span class="total-price">350</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="py-5 mt-5">
+        <div class="container d-flex justify-content-center justify-content-lg-between align-items-center">
+          <div class="logo-detail">
+            <img src="frontend/images/logo.svg" alt="" width="180px">
+            <p class="mt-3">We kaboom your beauty holiday<br>instantly and memorable.</p>
+            <div class="social">
+              <ul class="d-flex justify-content-center">
+                <li><a href=""><img src="frontend/images/Icons/fb.svg" alt=""></a></li>
+                <li><a href=""><img src="frontend/images/Icons/twtr.svg" alt=""></a></li>
+                <li><a href=""><img src="frontend/images/Icons/igg.svg" alt=""></a></li>
+                <li><a href=""><img src="frontend/images/Icons/yt.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="menu d-lg-flex d-none  justify-content-between">
+            <div class="beginner">
+              <ul>
+                <h6>For Beginners</h6>
+                <li><a href="">New Account</a></li>
+                <li><a href="">Start Booking</a></li>
+                <li><a href="">Payments</a></li>
+              </ul>
+            </div>
+            <div class="explore">
+              <ul>
+                <h6>Explore Us</h6>
+                <li><a href="">Our Careers</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+              </ul>
+            </div>
+            <div class="contact">
+              <ul>
+                <h6>Contact Us</h6>
+                <li><a href="mailto:b107116083@tsu.edu.tw">support@bolang.com</a></li>
+                <li><a href="tel:+62 8979 5623 1234 ">+62 8979 5623 1234 </a></li>
+                <li><a href="">Tainan, Taiwan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="copyright">
+          <p>Copyright &copy; 2021 Bolang.com. All right reserved.</p>
+        </div>
+      </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
